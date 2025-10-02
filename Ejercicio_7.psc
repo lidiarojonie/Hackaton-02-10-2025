@@ -45,7 +45,7 @@ Algoritmo Ejercicio_7
 		Si movimiento = 'd'
 			Si (b  < tamaño)
 				b = b + 1
-			FinSi
+			FinSi 
 		FinSi
 		jugadas = jugadas + 1
 	Hasta Que jugadas > 10
