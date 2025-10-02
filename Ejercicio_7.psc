@@ -1,19 +1,19 @@
 // Tablero con 1 'H' y que se puedan desplazar hacia la derecha/izquierda/arriba/abajo
 Algoritmo Ejercicio_7
 	Definir tablero Como Caracter
-	Definir tamaño como Entero	
-	tamaño = 10
-	Dimension tablero[tamaño,tamaño]
+	Definir tamaÃ±o Como Entero	
+	tamaÃ±o = 10
+	Dimension tablero[tamaÃ±o,tamaÃ±o]
 	Definir a, b, jugadas Como Entero
 	Definir movimiento Como Caracter
 	jugadas = 0
-	a = aleatorio(1,tamaño)
-	b = aleatorio(1,tamaño)
+	a = aleatorio(1,tamaÃ±o)
+	b = aleatorio(1,tamaÃ±o)
 	H = tablero[a,b]
 	
 	Repetir 
-		Para i<-1 Hasta tamaño Con Paso 1 Hacer		// Genera el tablero
-			Para l<-1 Hasta tamaño Con Paso 1 Hacer
+		Para i<-1 Hasta tamaÃ±o Con Paso 1 Hacer		// Genera el tablero
+			Para l<-1 Hasta tamaÃ±o Con Paso 1 Hacer
 				Si a == i Y b == l Entonces
 					tablero[i,l] = 'H'
 					Escribir tablero[i,l], " ", Sin Saltar;
@@ -38,12 +38,12 @@ Algoritmo Ejercicio_7
 			FinSi
 		FinSi
 		Si movimiento = 's'
-			Si (a  < tamaño)
+			Si (a  < tamaÃ±o)
 				a = a + 1
 			FinSi
 		FinSi
 		Si movimiento = 'd'
-			Si (b  < tamaño)
+			Si (b  < tamaÃ±o)
 				b = b + 1
 			FinSi 
 		FinSi
